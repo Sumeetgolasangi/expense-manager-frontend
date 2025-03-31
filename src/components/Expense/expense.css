@@ -1,0 +1,42 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabButton {
+  width: 160px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabButton:hover {
+  width: 160px;
+  background: #373737;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabButtonActive {
+  width: 160px;
+  background: none;
+  border: none;
+  border-bottom: #ffffff 2px solid;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

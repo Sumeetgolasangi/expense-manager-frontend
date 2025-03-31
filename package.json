@@ -1,6 +1,7 @@
 {
   "name": "expense-manager-frontend",
   "version": "0.1.0",
+  "homepage": "https://Sumeetgolasangi.github.io/expense-manager-frontend",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
