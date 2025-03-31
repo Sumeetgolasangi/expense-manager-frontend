@@ -1,4 +1,5 @@
 import Categories from "../category";
+import ExpenseComponent from "../Expense";
 import "./home.css";
 const HomeComponent: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const HomeComponent: React.FC = () => {
       />
       <h1>Expense Tracker</h1>
       <Categories />
+      <ExpenseComponent />
     </div>
   );
 };

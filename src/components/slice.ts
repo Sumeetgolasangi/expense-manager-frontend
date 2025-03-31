@@ -2,13 +2,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Define the state type
 interface ExpenseState {
-  value: number;
+  type: string;
   loading: boolean;
   error: string | null;
 }
 
 const initialState: ExpenseState = {
-  value: 0,
+  type: '',
   loading: false,
   error: null,
 };
@@ -17,8 +17,8 @@ export const expenseSlice = createSlice({
   name: "expense",
   initialState,
   reducers: {
-    setValue: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
+    setType: (state, action: PayloadAction<string>) => {
+      state.type = action.payload;
     },
     setLoading: (state, action: PayloadAction<boolean>) => {
       state.loading = action.payload;
@@ -29,5 +29,5 @@ export const expenseSlice = createSlice({
   },
 });
 
-export const { setValue } = expenseSlice.actions;
+export const { setType, setLoading, setValuError } = expenseSlice.actions;
 export default expenseSlice.reducer;
