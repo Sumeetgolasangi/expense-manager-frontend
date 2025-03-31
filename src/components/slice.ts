@@ -13,20 +13,6 @@ const initialState: ExpenseState = {
   error: null,
 };
 
-// Async Thunk: Simulating an API Call
-// export const fetchExpense = createAsyncThunk(
-//   "expense/fetchExpense",
-//   async (_, { rejectWithValue }) => {
-//     try {
-//       const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-//       const data = await response.json();
-//       return data.id; // Using `id` as expense value
-//     } catch (error) {
-//       return rejectWithValue("Failed to fetch");
-//     }
-//   }
-// );
-
 export const expenseSlice = createSlice({
   name: "expense",
   initialState,
