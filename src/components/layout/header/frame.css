@@ -66,3 +66,13 @@
     }
   }
 }
+
+.dot-modal-container {
+  position: absolute; /* or fixed if you want it to stay in place */
+  top: 60px; /* Adjust position as needed */
+  right: -10px; /* Position it correctly */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other elements */
+}

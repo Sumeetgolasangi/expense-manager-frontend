@@ -11,8 +11,10 @@ const HomeComponent: React.FC = () => {
         height="100"
       />
       <h1>Expense Tracker</h1>
-      <Categories />
-      <ExpenseComponent />
+      <div style={{ marginLeft: "20px" }}>
+        <Categories />
+        <ExpenseComponent />
+      </div>
     </div>
   );
 };

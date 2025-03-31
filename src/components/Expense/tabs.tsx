@@ -39,7 +39,7 @@ const Tabs: React.FC = () => {
           Daily Expenses
         </div>
       </div>
-
+      |
       <div
         style={{ display: "flex", marginTop: "-10px" }}
         className={
@@ -61,7 +61,7 @@ const Tabs: React.FC = () => {
           Monthly Expenses
         </div>
       </div>
-
+      |
       <div
         style={{ display: "flex", marginTop: "-10px" }}
         className={"tabButton" + (activeTab === "Calender" ? "Active" : "")}
@@ -80,7 +80,7 @@ const Tabs: React.FC = () => {
           Calender
         </div>
       </div>
-
+      |
       <div
         style={{ display: "flex", marginTop: "-10px" }}
         className={"tabButton" + (activeTab === "Yearly" ? "Active" : "")}
